@@ -1,0 +1,107 @@
+/* Author: Katrine Heldor Storm */
+/* Guide: Jon-Martin Storm */
+
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
+         url(fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
+         url(fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
+    font-display: optional;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("../images/melinda-gimpel-npARYp27Ja0-unsplash.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.caption-outer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.caption-inner {
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.8);
+}
+
+.title-text {
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+.caption-outer img {
+    border-radius: 50%;
+    /* border: 5px solid #111; */
+    width: 150px;
+    height: 150px;
+}
+
+.experience {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.contact {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.column {
+    width: 40%;
+    padding: 2%;
+    display:inline-block;
+    text-align: left;
+    background-color: silver;
+}
+
+#bottom {
+    font-size: 0.7vw;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .experience,
+    .contact{
+        width: 100%;
+    }
+    .column {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #bottom {
+        font-size: 7px;
+    }
+}
+
